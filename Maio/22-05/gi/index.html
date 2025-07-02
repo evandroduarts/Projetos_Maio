@@ -1,0 +1,28 @@
+!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <title>Letreiro Animado Personalizado</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="controls">
+      <label for="inputMensagem">Mensagem:</label>
+      <input type="text" id="inputMensagem" value="🚀 Bem-vindo ao Curso!" />
+      
+      <label for="velocidade">Velocidade:</label>
+      <input type="range" id="velocidade" min="2" max="20" value="10" />
+      <span id="valorVelocidade">10s</span>
+
+      <button id="toggleTheme">🌙</button>
+    </div>
+
+    <div class="letreiro"></div>
+    <span id="mensagem"></span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
